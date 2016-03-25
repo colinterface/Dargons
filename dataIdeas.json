@@ -1,0 +1,69 @@
+
+/* cant put quests inside of users */
+{
+  "users": [
+    {
+      "name": "ultralame",
+      "quests": [
+        {
+          "title": "Zombie Escape",
+          "description": "A thrilling brush with the undead",
+          "waypoints": [
+            {
+              "coordinates": {
+                "latitude": 123.123456,
+                "longitude": -32.123456
+              },
+              "title": "Outbreak",
+              "description": "O no everyone is zombie now. Head for safety.",
+              "arrivalURL": "asdf.com"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+/* at some point there could be different categories for quests. public, private, drafts, etc */
+{
+  "quests": {
+    "Zombie Escape": {
+      "description": "A thrilling brush with the undead",
+      "waypoints": [
+        {
+          "coordinates": {
+            "latitude": 123.123456,
+            "longitude": -32.123456
+          },
+          "title": "Outbreak",
+          "description": "O no everyone is zombie now. Head for safety.",
+          "arrivalURL": "asdf.com"
+        }
+      ]
+    }
+  }
+}
+
+/* more flat. allows fetching quests without waypoints. good for seleting waypoints on mobile */
+{
+  "quests": {
+    "Zombie Escape": {
+      "description": "A thrilling brush with the undead"
+    }
+  },
+  "waypoints": {
+    "Zombie Escape": [
+      {
+        "coordinates": {
+          "latitude": 123.123456,
+          "longitude": -32.123456
+        },
+        "title": "Outbreak",
+        "description": "O no everyone is zombie now. Head for safety.",
+        "arrivalURL": "asdf.com"
+      }
+    ]
+  }
+}
